@@ -1,0 +1,6 @@
+config.toml
+tmp
+vendor
+go.sum
+cfg
+builds
