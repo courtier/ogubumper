@@ -73,7 +73,7 @@ func startBump() {
 	fmt.Println("logged in", string(t))
 
 	//manually go to profile then threads created by user
-	el = page.MustElementX("/html/body/div[7]/div/b/div[3]/div/div[1]/div[1]/div[1]/a")
+	el = page.Timeout(60 * time.Second).MustElementX("/html/body/div[7]/div/b/div[3]/div/div[1]/div[1]/div[1]/a").CancelTimeout()
 	el.Click(proto.InputMouseButtonLeft)
 	//click on threads created by user
 	el = page.MustElementX("/html/body/div[7]/div/div[3]/div[2]/div/div/div/div/div[2]/div[1]/div[1]/a")
