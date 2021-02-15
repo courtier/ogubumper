@@ -1,0 +1,30 @@
+#ogusers.com username
+username=""
+
+#ogusers.com password
+password=""
+
+#urls to thread that will be bumped
+threads=[
+    ""
+]
+
+#one of these will be picked at random
+messages=[
+    "geeking on a friday",
+    "diamonds on my necklace",
+    "imma die i aint even 25",
+    "sippin pesticides, im next to die",
+    "george bailey im wishin on it daily",
+    "but i dont get the luxury of visions of my vanquish"
+]
+
+#delay between bumping of each thread in seconds, can be 0
+bumpdelay=5
+
+#will automatically bump threads, first bump will be after waiting for the interval as well
+#you might wanna run false first, then set automode=true and keep running like that
+automode=true
+
+#will bump threads every this many minutes, only used if automode=true
+autointerval=30
